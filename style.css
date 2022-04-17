@@ -1,0 +1,407 @@
+body {
+  background-color: #13001a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+h1, h2 {
+  text-align: center;
+  font-size: 8rem;
+  color: #9900cc;
+  margin-top: 20rem;
+}
+
+#finalScore {
+  text-align: center;
+  font-size: 9rem;
+  color: #9900cc;
+  margin-top: 20rem;
+  margin-bottom: 0;
+}
+
+#question {
+  display: flex;
+  max-width: 50%;
+  margin: auto;
+  margin: 15rem auto 0 auto;
+  font-size: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  min-width: 80rem;
+  text-align: left;
+}
+
+.nu_img {
+  display: block;
+  width: 60vh;
+  margin: 13vh auto;
+}
+
+.center-btn {
+  text-align: center;
+  margin-top: 8rem;
+}
+
+.btn {
+  background-color: #260033;
+  color: azure;
+  font-size: 3rem;
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  border-radius: 4px;
+  margin: 0 2.5rem 0 2.5rem;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: #ac00e6;
+}
+
+.next-btn {
+  background-color: #260033;
+  color: azure;
+  font-size: 3rem;
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  border-radius: 4px;
+  margin: 0 2.5rem 0 2.5rem;
+  transition: 0.3s;
+}
+
+.next-btn:hover {
+  cursor: pointer;
+  color: #ac00e6;
+}
+
+.choice-container {
+  display: flex;
+  max-width: 50%;
+  margin: auto;
+  margin-bottom: 0.8rem;
+  border-radius: 4px;
+  background-color: #260033;
+  color: azure;
+  font-size: 2rem;
+  min-width: 80rem;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: transform 100ms;
+}
+
+.choice-prefix {
+  padding: 2rem 2.5rem;
+}
+
+.choice-text {
+  padding: 2rem;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.correct {
+  background: #29a329;
+}
+
+.incorrect {
+  background: #990000;
+}
+
+.hud-container {
+  display: flex;
+  max-width: 50%;
+  margin: auto;
+  margin-top: 15vh;
+  min-width: 80rem;
+}
+
+.hud-item {
+  width: 20rem;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 1.5rem;
+  color: azure;
+}
+
+#progressBar {
+  width: 100%;
+  height: 2rem;
+  border: 0.2rem solid #1f7a1f;
+  margin-top: 0.2rem;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+#progressBarFull {
+  height: 100%;
+  background: #1f7a1f;
+  width: 0%;
+}
+
+.instaLink {
+  color: azure;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  letter-spacing: 1px;
+  margin: 0;
+  transition: 0.3s;
+}
+
+.instaLink:hover {
+  color: #ac00e6;
+}
+
+.linkBtn {
+  margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 1250px) {
+  h1 {
+    font-size: 6rem;
+  }
+
+  .btn {
+    font-size: 2.5rem;
+    padding: 1rem 3rem;
+    margin: 0 2rem 0 2rem;
+  }
+
+  .hud-container {
+    min-width: 60rem;
+  }
+
+  #question {
+    min-width: 60rem;
+  }
+
+  .choice-container {
+    min-width: 60rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  h1 {
+    font-size: 5rem;
+    margin-top: 22rem;
+  }
+
+  #finalScore {
+    font-size: 8rem;
+  }
+
+  .center-btn {
+    margin-top: 6rem;
+  }
+
+  .btn {
+    font-size: 2rem;
+    margin: 0 1.5rem 0 1.5rem;
+  }
+
+  .hud-container {
+    min-width: 50rem;
+  }
+
+  #question {
+    min-width: 50rem;
+  }
+
+  .choice-container {
+    min-width: 50rem;
+  }
+
+  .instaLink {
+    font-size: 1.5rem;
+  }
+
+  .linkBtn {
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 4rem;
+    margin-top: 24rem;
+  }
+
+  #finalScore {
+    font-size: 6rem;
+  }
+
+  .center-btn {
+    margin-top: 6rem;
+  }
+
+  .btn {
+    font-size: 1.8rem;
+    padding: 0.8rem 2.5rem;
+    margin: 0 1rem 0 1rem;
+  }
+
+  .hud-container {
+    min-width: 40rem;
+  }
+
+  #question {
+    min-width: 40rem;
+    font-size: 4rem;
+  }
+
+  .choice-container {
+    min-width: 40rem;
+    font-size: 1.5rem;
+  }
+
+  .hud-item {
+    width: 15rem;
+  }
+
+  .hud-prefix {
+    font-size: 1.3rem;
+  }
+
+  #progressBar {
+    height: 1.5rem;
+  }
+
+  .instaLink {
+    font-size: 1.5rem;
+  }
+
+  .linkBtn {
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  #finalScore {
+    font-size: 4.4rem;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+    padding: 0.8rem 2rem;
+    margin: 0 0.8rem 0 0.8rem;
+  }
+
+  .next-btn {
+    font-size: 1.5rem;
+    padding: 1.5rem 3rem;
+    margin: 0 2.5rem 0 2.5rem;
+  }
+
+  .hud-container {
+    min-width: 30rem;
+  }
+
+  #question {
+    min-width: 30rem;
+    font-size: 3rem;
+  }
+
+  .choice-container {
+    min-width: 30rem;
+    font-size: 1.25rem;
+  }
+
+  .hud-item {
+    width: 12rem;
+  }
+
+  .hud-prefix {
+    font-size: 1rem;
+  }
+
+  #progressBar {
+    height: 1.2rem;
+  }
+
+  .nu_img {
+    width: 40vh;
+    margin: 25vh auto 0;
+  }
+
+  .instaLink {
+    font-size: 1.25rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .linkBtn {
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  #finalScore {
+    font-size: 4rem;
+    margin-top: 20rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .center-btn {
+    margin-top: 2rem;
+  }
+
+  .btn {
+    font-size: 1.25rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .hud-container {
+    min-width: 25rem;
+  }
+
+  #question {
+    min-width: 25rem;
+    font-size: 2.5rem;
+  }
+
+  .choice-container {
+    min-width: 25rem;
+  }
+
+  .hud-item {
+    width: 12.5rem;
+  }
+
+  #progressBar {
+    height: 1.1rem;
+  }
+
+  .nu_img {
+    width: 35vh;
+    margin: 28vh auto 10vh;
+  }
+
+  .instaLink {
+    font-size: 1rem;
+    padding: 1.5rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .linkBtn {
+    margin-top: 0.5rem;
+  }
+}

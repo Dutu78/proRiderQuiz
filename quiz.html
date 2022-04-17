@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ulei pentru mecanisme fine</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="media/favicon.ico">
+  </head>
+  <body>
+    <div id="quiz">
+      <div class="hud-container">
+        <div class="hud-item">
+          <p id="progressText" class="hud-prefix">Intrebare</p>
+          <div id="progressBar">
+            <div id="progressBarFull"></div>
+          </div>
+        </div>
+      </div>
+      <h2 id="question">Intrebarea 1</h2>
+      <div class="choice-container">
+        <p class="choice-text" data-number="1">Choice</p>
+      </div>
+      <div class="choice-container">
+        <p class="choice-text" data-number="2">Choice</p>
+      </div>
+      <div class="choice-container">
+        <p class="choice-text" data-number="3">Choice</p>
+      </div>
+    </div>
+    <img id="meme" class="nu_img" src="media/radaciniFake.jpg">
+    <div id="next-btn" class="center-btn">
+      <a onclick="showQuiz()" class="next-btn">next</a>
+    </div>
+    <div id="end">
+      <h3 id="finalScore">0</h3>
+      <!-- <div class="center-btn linkBtn">
+        <a class="instaLink" href="https://www.instagram.com/mta_racing/">@mta_racing</a>
+        <a class="instaLink" href="https://www.instagram.com/dutu256/">@dutu256</a>
+      </div> -->
+      <div class="center-btn">
+        <a onclick="start()" class="btn">mai intră o fisă</a>
+        <a onclick="nu()" class="btn">mă las..</a>
+      </div>
+    </div>
+    <script src="index.js" charset="utf-8"></script>
+    <script src="quiz.js" charset="utf-8"></script>
+  </body>
+</html>
